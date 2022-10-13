@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<title>Sistem Deteksi Malware Windows</title>
+	<link rel="shortcut icon" href="{{ url_for('static', filename="img/aa.jpg")}}"/>
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename="css/bootstrap.min.css")}}" />
+
+	<!-- Owl Carousel -->
+	<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename="css/owl.carousel.css")}}" />
+	<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename="css/owl.theme.default.css")}}" />
+
+	<!-- Magnific Popup -->
+	<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename="css/magnific-popup.css")}}" />
+
+	<!-- Font Awesome Icon -->
+	<link rel="stylesheet" href="{{ url_for('static', filename="css/font-awesome.min.css")}}">
+
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename="css/style.css")}}" />
+
+  <!-- FOR UPLOAD BUTTON -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+	<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto:100,300'>
+	<link rel="stylesheet" href="{{ url_for('static', filename="css/styles.css")}}">
+	<!--FINISH-->
+
+</head>
+
+<body>
+				<div class="navbar-header">
+					<!-- Logo -->
+					<div class="navbar-brand">
+						<br>
+						<a href="index.html">
+							<h3 style="color:black;" class="logo">Sistem Deteksi Malware Windows Menggunakan Machine Learning Berbasis Web</h3>
+							<h3 style="color:black;" class="logo-alt">Ai Nur Asri - 24052218068</h3>
+						</a>
+					</div>
+					<div class="nav-collapse">
+						<span></span>
+					</div>
+					<!-- /Collapse nav button -->
+				</div>
+			</div>
+		</nav>
+		
+		<div class="home-wrapper">
+			<div class="container">
+				<div class="row">
+
+					<!-- home content -->
+    <center><br><br><br><div class="upload">
+			<form action = "http://localhost:5000/uploader" method = "POST" enctype = "multipart/form-data" id="myFile" >
+				 <div class="upload-files">
+					<header>
+					 <p>
+						<i class="fa fa-cloud-upload" aria-hidden="true"></i>
+						<span class="up">up</span>
+						<span class="load">load</span>
+					 </p>
+					</header>
+					<div class="body" id="drop">
+					 <i class="fa fa-file-text-o pointer-none" aria-hidden="true"></i>
+					 <p class="pointer-none"><b>Drag and drop</b> files here <br /> or <a href="" id="triggerFile">browse</a> to begin the upload</p>
+							<input type = "file" name = "file"  multiple="multiple" />
+					</div>
+					<footer>
+					 <div class="divider">
+						<span><AR>files</AR></span>
+					 </div>
+					 <div class="list-files">
+						<!--   template   -->
+					 </div>
+							<button class="importar">Mulai Deteksi</button>
+					</footer>
+				 </div>
+			 </form>
+    </div></center>
+	<section class="mt-8 h-full flex-auto rounded-lg md:mt-0 md:ml-8">
+		<div class="flex justify-around bg-white p-16 rounded-lg mt-8">
+			<img
+				class="h-24 md:h-28"
+				src="https://th.bing.com/th/id/OIP.6-rbxZHJ3xEuSJ2KM4sVXAHaHa?pid=ImgDet&rs=1"
+				alt="logo-uniga"
+			/>
+			<img
+				class="h-24 md:h-28"
+				src="https://4.bp.blogspot.com/--h884EOY6uM/ViigJMpfHiI/AAAAAAAAAGc/LinR3xGcrJ0/s1600/teknik.png"
+				alt="logo-teknik"
+			/>
+		</div>
+	</section>
+	</header>
+	<script type="text/javascript" src="{{ url_for('static', filename="js/jquery.min.js")}}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename="js/bootstrap.min.js")}}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename="js//owl.carousel.min.js")}}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename="js/jquery.magnific-popup.js")}}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename="js/main.js")}}"></script>
+	<script  src="{{ url_for('static', filename="js/index.js")}}"></script>
+
+</body>
+
+</html>
