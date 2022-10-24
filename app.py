@@ -14,7 +14,8 @@ import re
 import pandas as pd
 
 from flask import Flask, request, jsonify, render_template,abort,redirect,url_for
-from werkzeug import secure_filename
+from werkzeug.utils import secure_filename
+from werkzeug.datastructures import FileStorage
 from sklearn.ensemble import RandomForestClassifier
 
 def cutit(s,n):
